@@ -5,7 +5,7 @@ body{
 
 .signupback {
     width: 14.1%;
-    height: 300px;
+    height: 236px;
     background-size: cover;
     background-repeat: no-repeat;
     float: left;
@@ -17,18 +17,33 @@ body{
     box-shadow: 0px -194px 384px #000 inset;
 }
 form{
-    height: 700px;
-    width: 475px;
+   
+        height: 598px;
+        width: 475px;
+        position: absolute;
+        transform: translate(-57%,-50%);
+        top: 43%;
+        left: 50%;
+        border-radius: 20px;
+        background-color: #000;
+        color: #fff;
+        padding: 50px;
+        padding-left: 76px;
+        font-family: sans-serif;
+        padding-top: 0;
+        padding-bottom: 109px;
+}
+#eye{
     position: absolute;
-    transform: translate(-57%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 20px;
-    background-color: #000;
-    color: #fff;
-    padding: 50px;
-    padding-left: 76px;
-    font-family: sans-serif;
+    left: 80%;
+    top: 51%;
+    cursor: pointer;
+}
+#eye1{
+    position: absolute;
+    left: 81%;
+    top: 37%;
+    cursor: pointer;
 }
 input{
     display: block;
@@ -58,7 +73,7 @@ form p{
     text-align: center;
 }
 .signup {
-    margin-top: 51px;
+    margin-top: 40px;
     width: 95%;
     height: 50px;
     cursor: pointer;
@@ -70,7 +85,8 @@ form p{
     font-weight: 600;
 }
 footer {
-    position: fixed;
+     /* position: fixed;  */
+    
     bottom: 0;
     width: 100%;
     background: #212020;
@@ -78,6 +94,9 @@ footer {
     height: 261px;
     font-family: sans-serif;
     font-weight: 300;
+    /* padding-top: 0; */
+    position: absolute;
+bottom: -129px;
 }
 footer a{
     color: #fff;
@@ -120,10 +139,12 @@ footer a{
 .rights {
     position: absolute;
     bottom: 0px;
-    left: 401px;
+    left: 350px;
     font-size: 26px;
     font-weight: 100;
-    top: 203px;
+    top: 1000px;
+    font-family: sans-serif;
+    color: white;
 }
 .signin {
     margin-top: 51px;
@@ -148,3 +169,58 @@ margin-left: 297px;
 font-size: 14px;
 text-decoration: none;
 }
+#fld{
+    font-size: 23px;
+    padding-left: 23px;
+}
+.img{
+    height: 16px;
+}
+
+.column{
+    width: 33.33%;
+    float: left;
+    height: 285px;
+    background: #212020;
+    padding-top: 30px;
+    font-family: sans-serif;
+    
+}
+
+.rows{
+    margin-top: -5px;
+    border-top-style: solid;
+    border-top-width: 777px;
+}
+
+
+ .fieldj{
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 110px;
+    
+}
+
+.fieldj1{
+    padding: 10px;
+    font-size: 30px;
+    list-style: none;
+    margin-left: 100px;
+    margin-bottom: -15px;
+    margin-top: -5px;
+}
+
+.fieldj2{
+    padding: 10px;
+    font-size: 30px;
+    list-style: none;
+    margin-left: 95px;
+}
+
+
+.fieldja{
+    color: white;
+    text-decoration: none;
+} 
