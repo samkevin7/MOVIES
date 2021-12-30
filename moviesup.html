@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="signmovie.css">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="movies.css">
+    <style>
+        #nameerr,#emailerr,#pwderr,#cityerr{
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -33,60 +38,55 @@
             <div class="signupback row" style="background-image: url(./images/02/Bitmap@2x.png);"></div>
 
         </div>
-       <form action="">
+       <form action="" id="js">
            <h3>SignUp</h3>
            <p>Enter your  credentials  to signup</p>
            <label for="name">Name</label>
-           <input type="text" placeholder="Name" id="name">
+           <input type="text" placeholder="Name" id="name" name="username">
+           <p id="nameerr" style="color: red;"> <img class="img"  src="./OTT Icon 2/Alert@2x.png">name is required</p>
            <label for="email">Email</label>
-           <input type="text" placeholder="Email" id="email">
+           <input type="email" placeholder="Email" id="email" name="email">
+           <p id="emailerr" style="color: red;"><img class="img"  src="./OTT Icon 2/Alert@2x.png">email is required</p>
            <label for="password">Password</label>
-           <input type="text" placeholder="password" id="password">
+           <input type="password" placeholder="password" id="password" name="password" minlength="6">
+           <img id="eye" src="./OTT Icon 2/Visible.png" alt="">
+           <p id="pwderr" style="color: red;"><img class="img"  src="./OTT Icon 2/Alert@2x.png">password is required</p>
+           
            <label for="city">City</label>
-           <input type="text" placeholder="city" id="city">
-           <button class="signup">Signup</button>
+           <input type="text" placeholder="city" id="city" name="city">
+           <p id="cityerr" style="color: red;"><img class="img"   src="./OTT Icon 2/Alert@2x.png">city is required</p>
+           <span id="msg" style="color: #A6AE00;"></span>
+           <button class="signup" id="btn">Signup</button>
+           
        </form>
-       <footer>
-        <div class="bottom"> 
-                <nav class="column1">
-                    <div class="field">
-                        <a href="">FAQ</a>
-                    </div>
-                    <div class="field">
-                        <a href="">Terms of use</a>
-                    </div>
-                    <div class="field">
-                        <a href="">Privacy policy</a>
-                    </div>
-                </nav>
-                <nav class="column-2">
-                    <div class="field">
-                       <a href="">Help center</a>
-                    </div>
-                    <div class="field">
-                        <a href="">Blog</a>
-                    </div>
-                    <div class="field">
-                        <a href="">Watch List</a>
-                    </nav>
-                    <nav class="column-3">
-                        <div class="field-1">
-                           Media center
-                        </div>
-                        <div class="field-1">
-                            <a href=""><img src="./OTT Icon 2/You Tube.png" alt=""></a>
-                            <a href=""><img src="./OTT Icon 2/Face book.png" alt=""></a>
-                            <a href=""><img src="./OTT Icon 2/Instagram.png" alt=""></a>
-                        </div>
-                        <div class="field-1">
-                           <a href=""><img src="./OTT Icon 2/App Store.png" alt=""></a>
-                           <a href=""><img src="./OTT Icon 2/Google play.png" alt=""></a>
-                        </div>
-                    </nav>
+    </div>
+      <div class="rows">
+        <div class="column">
+            <ul>
+                <li class ="fieldj"><a href="" class = "fieldja">FAQ</a></li>
+                <li class ="fieldj"><a href="" class = "fieldja">Terms of use</a></li>
+                <li class ="fieldj"><a href="" class = "fieldja">Privacy policy</a></li>
+            </ul>
         </div>
-        <p class="rights"><span style="color: #A6AE00;">Terms and Privacy NoticeSend us feedbackHelp<span>&#169;</span></span> 1996-2021, Watchify.com. Inc. or its affilites</p>
-    </footer>
+        <div class="column">
+            <ul>
+                <li class ="fieldj"><a href="" class = "fieldja">Help center</a></li>
+                <li class ="fieldj"><a href="" class = "fieldja">Blog</a></li>
+                <li class ="fieldj"><a href="" class = "fieldja">Watch List</a></li>
+            </ul>    
+        </div>
+        <div class="column">
+            <ul>
+                <li class ="fieldj"><a href="" class = "fieldja">Media center</a></li>
+                <li class ="fieldj1"><a href="" class = "fieldj1a"></a><img src="./OTT Icon 2/You Tube.png" alt=""><img src="./OTT Icon 2/Face book.png" alt=""><img src="./OTT Icon 2/Instagram.png" alt=""></a></li>
+                <li class ="fieldj2"><a href="" class = "fieldj1a"><img src="./OTT Icon 2/App Store.png" alt=""><img src="./OTT Icon 2/Google play.png" alt=""></a></li>
+            </ul>    
+        </div>
+        <p class="rights"><span style="color: #A6AE00;">Terms and Privacy NoticeSend us feedbackHelp</span> &#169; 1996-2021, Watchify.com. Inc. or its affilites</p>
     </div>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+      <script src="ajx.js"></script>
 </body>
 </html>
