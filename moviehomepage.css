@@ -1,4 +1,4 @@
- body{
+body{
     margin: 0;
     background-color: black;
     box-shadow: 0px -78px 154px #000 inset;
@@ -154,10 +154,10 @@ footer a{
 .rights {
     position: absolute;
     bottom: 0px;
-    left: 350px;
+    left: 445px;
     font-size: 26px;
     font-weight: 100;
-    top: 4683px;
+    top: 5314px;
     font-family: sans-serif;
     color: white;
 }
@@ -213,4 +213,14 @@ footer a{
 .fieldja{
     color: white;
     text-decoration: none;
+} 
+.out{
+    color: white;
+    background-color: #a6ae00;
+    margin-right: 87px;
+    margin-top: 40px;
+    width: 144px;
+    border-radius: 64px;
+    height: 39px;
+    cursor: pointer;
 } 
