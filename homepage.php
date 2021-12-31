@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if(!isset($_SESSION["email"])){
+    header("location:moviesin.html");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +26,10 @@
        
     </nav>
     </header>
+    <form action="logout.php">
+        
+        <button class="out" style="float:right">LOGOUT</button>
+    </form>
 <div class="topcontainer">
     <div class="logo">
         <img src="./LOGO@2x.png" width = "260px" height = "80px" alt="logo">
